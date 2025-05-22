@@ -1,7 +1,9 @@
 
 body {
     height: auto;
-    width: 100%;
+    width: auto;
+    margin: auto;
+    margin-bottom: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,7 +11,7 @@ body {
     text-decoration-color: white;
     transition: 0.8s all;
     text-align: center;
-    background-position: 100;
+    background-position: auto;
     background-size: cover;
     background-image: url("xbackground.jpeg");
 
@@ -17,7 +19,7 @@ body {
 
 
 body{
-    margin-right: 100px;
+    margin-right: auto;
     font-family: sans-serif;
 }
 .topnav{
@@ -31,9 +33,9 @@ body{
     float: center;
     color: white;
     text-align: left;
-    padding: 150px;
+    padding: 10%;
     text-decoration: none;
-    font-size: 20px;
+    font-size: auto;
 }
 .topnav a:hover{
     background-color: darkcyan;
@@ -42,4 +44,19 @@ body{
 .topnav a.active{
     background-color: darkcyan;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .user-items-list-simple:not([data-num-columns="1"]) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px !important;
+    }
+
+    .list-item-content__title {
+        font-size: 1rem !important;
+    }
+
+    .list-item {
+        padding: .5rem !important;
+    }
 }

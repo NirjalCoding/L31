@@ -1,10 +1,24 @@
 #social-media {
-background-color: black;
+    background-color: black;
 }
 .media_link {
-    padding: 1rem;
-    max-width: 15rem;
-    margin-left: 1rem;
+    padding: auto;
+    max-width: auto;
+    margin-left: auto;
     border: 2px solid orange;
-    border-radius: 0.5rem;
+    border-radius: auto;
+}
+@media only screen and (max-width: 768px) {
+    .user-items-list-simple:not([data-num-columns="1"]) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px !important;
+    }
+
+    .list-item-content__title {
+        font-size: 1rem !important;
+    }
+
+    .list-item {
+        padding: .5rem !important;
+    }
 }

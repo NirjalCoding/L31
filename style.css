@@ -1,6 +1,6 @@
 
-body{    
-    height: 100%;
+body {
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,9 +10,9 @@ body{
     transition: 0.8s all;
     text-align: center;
     background-position: 100;
-    background-size:cover;
-    background-image : url("xbackground.jpeg");
-    
+    background-size: cover;
+    background-image: url("xbackground.jpeg");
+
 }
 
 
